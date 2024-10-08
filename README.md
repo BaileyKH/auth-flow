@@ -75,12 +75,11 @@ Before you begin, ensure you have the following installed:
   
   4. **Configure Supabase Client**:
       - In the ../supabase/auth.ts, set up your Supabase client using the environment variables:
-    ```import { createClient } from '@supabase/supabase-js';
+    import { createClient } from '@supabase/supabase-js';
 
     const supabaseUrl = process.env.VITE_SUPABASE_URL;
     const supabaseKey = process.env.VITE_SUPABASE_ANON;
     export const supabase = createClient(supabaseUrl, supabaseKey);
-    ```
 
   ## Running the App
 
