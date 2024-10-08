@@ -11,7 +11,7 @@ export default function Login() {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
     const [loading, setLoading] = useState<boolean>(false)
-    const [error, setError] = useState<string | null>(null)
+    // const [error, setError] = useState<string | null>(null)
 
     const handleLogIn = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -27,7 +27,7 @@ export default function Login() {
                 throw error
             }
         } catch (error: any) {
-            setError(error.message)
+            console.error(error)
         } finally {
             setLoading(false)
             navigate('/dashboard')

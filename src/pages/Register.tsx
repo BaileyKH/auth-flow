@@ -12,13 +12,13 @@ export default function Register() {
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false);
-    const [error, setError] = useState<string | null>(null);
-    const [success, setSuccess] = useState<boolean>(false);
+    // const [error, setError] = useState<string | null>(null);
+    // const [success, setSuccess] = useState<boolean>(false);
 
     const handleRegister = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true)
-        setError(null);
+        // setError(null);
 
         try {
 
@@ -35,7 +35,7 @@ export default function Register() {
             }
             
         } catch (error: any) {
-            setError(error.message)
+            console.error(error)
         } finally {
             setLoading(false)
             navigate("/thankyou")
