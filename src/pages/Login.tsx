@@ -2,7 +2,7 @@ import { useState, FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "../supabase/auth";
 
-import ghost from '../assets/images/ghost.png'
+import ghost from '/public/images/ghost.png'
 
 export default function Login() {
 
@@ -134,7 +134,7 @@ export default function Login() {
                 <div className="relative hidden w-0 flex-1 lg:block">
                     <img
                         alt=""
-                        src="/src/assets/images/hw-bg.webp"
+                        src="/public/images/hw-bg.webp"
                         className="absolute inset-0 h-full w-full object-cover"
                     />
                 </div>

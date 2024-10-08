@@ -3,7 +3,7 @@ import { useState, FormEvent } from "react";
 
 import { supabase } from "../supabase/auth";
 
-import spider from '../assets/images/spider.png'
+import spider from '/public/images/spider.png'
 
 export default function Register() {
 
@@ -132,7 +132,7 @@ export default function Register() {
                 <div className="relative hidden w-0 flex-1 lg:block">
                     <img
                         alt=""
-                        src="/src/assets/images/hw-bg.webp"
+                        src="/public/images/hw-bg.webp"
                         className="absolute inset-0 h-full w-full object-cover"
                     />
                 </div>

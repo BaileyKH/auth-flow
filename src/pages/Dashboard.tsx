@@ -34,7 +34,7 @@ export default function Dashboard() {
     }
 
     return(
-        <div className="h-screen w-full flex justify-center items-center bg-[url('/src/assets/images/hw-bg.webp')] bg-cover bg-center bg-no-repeat">
+        <div className="h-screen w-full flex justify-center items-center bg-[url('/public/images/hw-bg.webp')] bg-cover bg-center bg-no-repeat">
             {isConfettiRunning && <Confetti
                 colors={['#0f0f0f', '#f97316', '#4c1d95', '#65a30d']}
             />}

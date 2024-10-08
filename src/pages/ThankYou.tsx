@@ -1,7 +1,7 @@
 
 export default function ThankYou() {
     return(
-        <main className="h-screen w-full flex justify-center items-center bg-[url('/src/assets/images/hw-bg.webp')] bg-cover bg-center bg-no-repeat">
+        <main className="h-screen w-full flex justify-center items-center bg-[url('/public/images/hw-bg.webp')] bg-cover bg-center bg-no-repeat">
             <div className="flex flex-col justify-center items-center bg-orange-50 px-6 py-12 shadow sm:rounded-lg sm:px-12 rounded-lg">
                 <div className="text-center">
                     <h1 className="text-2xl md:text-5xl font-bold tracking-wider text-gray-900 drop-shadow-md">Thank You for Registering</h1>
