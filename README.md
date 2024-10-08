@@ -69,12 +69,14 @@ Before you begin, ensure you have the following installed:
       - In your project dashboard, navigate to **Settings > API** and copy your supabase URL and supabase Anon Key
   
   3. **Create a ```.env``` in the roote of your project**:
-        ```VITE_SUPABASE_URL=your-supabase-url
+        ```
+          VITE_SUPABASE_URL=your-supabase-url
           VITE_SUPABASE_ANON=your-supabase-anon-key
         ```
   
   4. **Configure Supabase Client**:
       - In the ../supabase/auth.ts, set up your Supabase client using the environment variables:
+          ```
           import { createClient } from '@supabase/supabase-js';
 
           const supabaseUrl = process.env.VITE_SUPABASE_URL;
