@@ -69,9 +69,8 @@ Before you begin, ensure you have the following installed:
   2. **Get your API Keys**:
       - In your project dashboard, navigate to **Settings > API** and copy your supabase URL and supabase Anon Key
   
-  3. **Create a .env.local in the roote of your project**:
-    ```
-    VITE_SUPABASE_URL=your-supabase-url
+  3. **Create a ```.env.local``` in the roote of your project**:
+    ```VITE_SUPABASE_URL=your-supabase-url
     VITE_SUPABASE_ANON=your-supabase-anon-key
     ```
   
@@ -83,7 +82,6 @@ Before you begin, ensure you have the following installed:
     const supabaseUrl = process.env.VITE_SUPABASE_URL;
     const supabaseKey = process.env.VITE_SUPABASE_ANON;
     export const supabase = createClient(supabaseUrl, supabaseKey);
-    ```
 
   ## Running the App
 
