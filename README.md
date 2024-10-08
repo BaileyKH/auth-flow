@@ -79,9 +79,9 @@ Before you begin, ensure you have the following installed:
           ```
           import { createClient } from '@supabase/supabase-js';
 
-          const supabaseUrl = import.meta.env.VITE_SUPA_URL;
-          const supabaseKey = import.meta.env.VITE_SUPA_ANON;
-          export const supabase = createClient(supabaseUrl, supabaseKey);
+          const supabaseURL = import.meta.env.VITE_SUPA_URL
+          const supabaseAnon = import.meta.env.VITE_SUPA_ANON
+          export const supabase = createClient(supabaseURL, supabaseAnon);
 
   ## Running the App
 
