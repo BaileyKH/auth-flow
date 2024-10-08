@@ -58,9 +58,8 @@ Before you begin, ensure you have the following installed:
    cd auth-flow
 
 2. **Install Dependencies**:
-  ```bash
-  npm install
-  ```
+   ```bash
+   npm install
 
 ### Supabase Setup
 
@@ -69,19 +68,19 @@ Before you begin, ensure you have the following installed:
   2. **Get your API Keys**:
       - In your project dashboard, navigate to **Settings > API** and copy your supabase URL and supabase Anon Key
   
-  3. **Create a ```.env.local``` in the roote of your project**:
+  3. **Create a ```.env``` in the roote of your project**:
     ```VITE_SUPABASE_URL=your-supabase-url
-    VITE_SUPABASE_ANON=your-supabase-anon-key
+      VITE_SUPABASE_ANON=your-supabase-anon-key
     ```
   
   4. **Configure Supabase Client**:
       - In the ../supabase/auth.ts, set up your Supabase client using the environment variables:
-    ```
-    import { createClient } from '@supabase/supabase-js';
+    ```import { createClient } from '@supabase/supabase-js';
 
     const supabaseUrl = process.env.VITE_SUPABASE_URL;
     const supabaseKey = process.env.VITE_SUPABASE_ANON;
     export const supabase = createClient(supabaseUrl, supabaseKey);
+    ```
 
   ## Running the App
 
