@@ -8,7 +8,7 @@
   font-family: 'Cinzel';
   font-style: normal;
   font-weight: 400;
-  src: url('/src/assets/fonts/cinzel-v23-latin-700.woff2') format('woff2'); 
+  src: url('/src/assets/fonts/cinzel-v23-latin-regular.woff2') format('woff2'); 
 }
 /* cinzel-700 - latin */
 @font-face {
@@ -16,7 +16,7 @@
   font-family: 'Cinzel';
   font-style: normal;
   font-weight: 700;
-  src: url('/src/assets/fonts/cinzel-v23-latin-regular.woff2') format('woff2'); 
+  src: url('/src/assets/fonts/cinzel-v23-latin-700.woff2') format('woff2'); 
 }
 /* cinzel-900 - latin */
 @font-face {
