@@ -12,11 +12,6 @@ Welcome to the **React Dashboard** project, which features **Supabase** authenti
     - [Installation](#installation)
     - [Supabase Setup](#supabase-setup)
 4. [Running the App](#running-the-app)
-5. [Authentication Flow](#authentication-flow)
-6. [Password Reset Flow](#password-reset-flow)
-7. [Confetti on the Dashboard](#confetti-on-the-dashboard)
-8. [Project Structure](#project-structure)
-9. [Credits](#credits)
 
 ## Project Features
 
@@ -65,6 +60,7 @@ Before you begin, ensure you have the following installed:
 2. **Install Dependencies**:
   ```bash
   npm install
+  ```
 
 ### Supabase Setup
 
@@ -89,7 +85,7 @@ Before you begin, ensure you have the following installed:
     export const supabase = createClient(supabaseUrl, supabaseKey);
     ```
 
-  ### Running the App
+  ## Running the App
 
   - Once your supabase credentials are set up, you ccan run the app:
   ```bash
