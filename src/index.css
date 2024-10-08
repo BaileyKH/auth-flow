@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/cinzel-v23-latin-regular.woff2') format('woff2'); 
+}
+/* cinzel-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/cinzel-v23-latin-700.woff2') format('woff2'); 
+}
+/* cinzel-900 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./fonts/cinzel-v23-latin-900.woff2') format('woff2'); 
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 font-cinzel transition-colors duration-300 ease-in-out scroll-smooth
+  }
+
+  .action-button {
+    @apply rounded-md bg-gray-900 px-3 py-2 text-sm md:text-lg font-semibold leading-6 tracking-widest text-white shadow-sm hover:bg-orange-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors duration-300 ease-in-out
+  }
+  
+  .bounce{
+    animation: bounce 2.5s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-12%);
+      animationTimingFunction: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animationTimingFunction: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}
