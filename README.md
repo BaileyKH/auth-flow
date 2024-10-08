@@ -34,7 +34,7 @@ Welcome to the **React Dashboard** project, which features **Supabase** authenti
 
 ## Tech Stack
 
-- **React** (TypeScript) - Front-end framework.
+- **Vite** (TypeScript) - Front-end framework.
 - **Supabase** - Authentication, database, and backend-as-a-service.
 - **React Router** - For navigation between pages.
 - **react-confetti** - Confetti animation for user celebration.
@@ -68,10 +68,10 @@ Before you begin, ensure you have the following installed:
   2. **Get your API Keys**:
       - In your project dashboard, navigate to **Settings > API** and copy your supabase URL and supabase Anon Key
   
-  3. **Create a ```.env``` in the roote of your project**:
+  3. **Create a ```.env``` in the root of your project**:
         ```
-          VITE_SUPABASE_URL=your-supabase-url
-          VITE_SUPABASE_ANON=your-supabase-anon-key
+          VITE_SUPA_URL=your-supabase-url
+          VITE_SUPA_ANON=your-supabase-anon-key
         ```
   
   4. **Configure Supabase Client**:
@@ -79,12 +79,12 @@ Before you begin, ensure you have the following installed:
           ```
           import { createClient } from '@supabase/supabase-js';
 
-          const supabaseUrl = process.env.VITE_SUPABASE_URL;
-          const supabaseKey = process.env.VITE_SUPABASE_ANON;
+          const supabaseUrl = import.meta.env.VITE_SUPA_URL;
+          const supabaseKey = import.meta.env.VITE_SUPA_ANON;
           export const supabase = createClient(supabaseUrl, supabaseKey);
 
   ## Running the App
 
-  - Once your supabase credentials are set up, you ccan run the app:
+  - Once your supabase credentials are set up, you can run the app:
   ```bash
   npm start
